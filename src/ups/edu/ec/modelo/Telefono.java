@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class Telefono implements Serializable{
 	
 	/**
-	 * 
+	 * Nombre Ricardo Chuqui
 	 */
 	private static final long serialVersionUID = 1L;
 	private int codigo;
