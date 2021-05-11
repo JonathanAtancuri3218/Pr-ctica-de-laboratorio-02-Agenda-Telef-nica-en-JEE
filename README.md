@@ -1,1 +1,1 @@
-# Pr-ctica-de-laboratorio-02-Agenda-Telef-nica-en-JEE
+# Prctica-de-laboratorio-02-Agenda-Telefonica-en-JEE
