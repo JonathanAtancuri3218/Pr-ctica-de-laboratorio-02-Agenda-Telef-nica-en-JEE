@@ -54,8 +54,8 @@ public class JDBCTelefonoDAO extends JDBCGenericDAO<Telefono ,Integer> implement
 	public Set<Telefono> findByTelefonoId(String UsuarioId) {
         Telefono te=new Telefono();
 		Set<Telefono> list = new HashSet<Telefono>();
-		System.out.print("SELECT * FROM Telefono WHERE Usuario_CEDULA=" + '"' + UsuarioId +   '"');
-		ResultSet rsProduct = conexionDos.query("SELECT * FROM Telefono WHERE Usuario_CEDULA=" + "'" + UsuarioId +  "'");
+		System.out.print("SELECT * FROM Telefono WHERE USU_CEDULA=" + '"' + UsuarioId +   '"');
+		ResultSet rsProduct = conexionDos.query("SELECT * FROM Telefono WHERE USU_CEDULA=" + "'" + UsuarioId +  "'");
 		try {
 			
 			
