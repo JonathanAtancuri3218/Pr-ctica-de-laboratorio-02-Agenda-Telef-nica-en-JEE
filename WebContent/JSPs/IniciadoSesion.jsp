@@ -49,7 +49,8 @@
 			</tr>
 		</table>
 		<c:forEach items="${resultado}" var="res">
-			<table width="50%" border="1" align="center">
+			<table class="table " width="50%" border="1"
+			align="center">
 				<tr>
 					<td>${res.getCodigo()}</td>
 					<td>${res.getNumero()}</td>

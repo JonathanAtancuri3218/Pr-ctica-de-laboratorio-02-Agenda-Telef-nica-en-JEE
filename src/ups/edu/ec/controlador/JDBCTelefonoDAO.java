@@ -54,14 +54,14 @@ public class JDBCTelefonoDAO extends JDBCGenericDAO<Telefono ,Integer> implement
 	public Set<Telefono> findByTelefonoId(String UsuarioId) {
         Telefono te=new Telefono();
 		Set<Telefono> list = new HashSet<Telefono>();
-		System.out.print("SELECT * FROM Telefono WHERE USU_CEDULA=" + '"' + UsuarioId +   '"');
-		ResultSet rsProduct = conexionDos.query("SELECT * FROM Telefono WHERE USU_CEDULA=" + "'" + UsuarioId +  "'");
+		System.out.print("SELECT * FROM Telefono WHERE CEDULA=" + '"' + UsuarioId +   '"');
+		ResultSet rsProduct = conexionDos.query("SELECT * FROM Telefono WHERE CEDULA=" + "'" + UsuarioId +  "'");
 		try {
 			
 			
 			while (rsProduct.next()) {
-				       Telefono product = new Telefono(rsProduct.getInt("id"), rsProduct.getString("numero"),
-						rsProduct.getString("tipo"),rsProduct.getString("operadora"),te.getUsuario());
+				       Telefono product = new Telefono(rsProduct.getInt("tel_codigo"), rsProduct.getString("tel_numero"),
+						rsProduct.getString("tel_tipo"),rsProduct.getString("tel_operadora"),te.getUsuario());
 				
 				
 				
